@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .main:hover {
+        animation: sharingan 1s ease-in-out 0s infinite ;
+
+    }
+
+    .main {
+
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh; 
+        border: 2px solid black;
+    }
+
+    .rot {
+        background-color: rgb(212, 14, 14);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border: 2px solid white;
+        border-radius: 50%;
+
+    }
+
+    .cont:nth-child(1) {
+        background-color: black;
+        z-index: 2;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid black;
+        transform: rotate(120deg) translateX(-170px);
+    }
+
+    .cont:nth-child(2) {
+        z-index: 2;
+        background-color: black;
+
+        position: absolute;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        transform: rotate(240deg)translateX(-170px);
+    }
+
+    .cont:nth-child(3) {
+        z-index: 2;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        transform: rotate(360deg)translateX(-170px);
+    }
+
+    .cont:nth-child(4) {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-right: 25px solid black;
+        border-radius: 50%;
+        transform: rotate(215deg) translateX(-5px) translateY(190px);
+    }
+
+    .cont:nth-child(5) {
+        z-index: 2;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-right: 25px solid black;
+        border-radius: 50%;
+        transform: rotate(96deg) translateX(-5px) translateY(190px);
+    }
+
+    .cont:nth-child(6) {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-right: 25px solid black;
+        border-radius: 50%;
+        transform: rotate(-26deg) translateX(-5px) translateY(190px);
+    }
+
+    .circle {
+        position: absolute;
+        background-color: black;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .round {
+        position: absolute;
+        width: 330px;
+        height: 330px;
+        border: 10px solid black;
+        border-radius: 50%;
+    }
+
+
+    @keyframes sharingan {
+        form {}
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="rot">
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="cont"></div>
+            <div class="circle"></div>
+            <div class="round"></div>
+            
+
+        </div>
+    </div>
+</body>
+
+</html>
